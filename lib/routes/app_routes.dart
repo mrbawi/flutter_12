@@ -14,6 +14,8 @@ import 'package:praktek/list-view/grid_view.dart';
 import 'package:praktek/list-view/singlechild_scroll.dart';
 import 'package:praktek/pages/album_page.dart';
 import 'package:praktek/pages/post_page.dart';
+import 'package:praktek/pages/login_page.dart';
+import 'package:praktek/pages/register_page.dart';
 
 class AppRoutes {
   static const home = '/';
@@ -32,6 +34,8 @@ class AppRoutes {
   static const latihanContainer2 = '/latihan-container-2';
   static const album = '/album';
   static const posts = '/posts';
+  static const login = '/login';
+  static const register = '/register';
 
   static Map<String, WidgetBuilder> routes = {
     home: (context) => const HomePage(),
@@ -50,5 +54,7 @@ class AppRoutes {
     latihanContainer2: (context) => const LatihanContainer2(),
     album: (context) => const AlbumPage(),
     posts: (context) => const PostPage(),
+    register: (context) => const RegisterPage(),
+    login: (context) => const LoginPage(),
   };
 }
